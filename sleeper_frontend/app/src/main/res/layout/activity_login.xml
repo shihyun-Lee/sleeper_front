@@ -11,12 +11,16 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp"
+        android:layout_marginTop="274dp"
+        android:layout_gravity="center_horizontal"
         android:padding="10dp"
         android:ems="10"
-        android:fontFamily="@font/font_style"
+        android:fontFamily="@font/font_the130"
+        android:textSize="15dp"
+        android:textColorHint="#80FFFFFF"
+        android:backgroundTint="#FFFFFFFF"
         android:hint="아이디"
-        android:inputType="textPersonName"
-        android:layout_gravity="center_horizontal"/>
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/edit_pw"
@@ -24,14 +28,18 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
         android:ems="10"
-        android:fontFamily="@font/font_style"
+        android:fontFamily="@font/font_the130"
+        android:textSize="15dp"
+        android:textColorHint="#80FFFFFF"
+        android:backgroundTint="#FFFFFFFF"
         android:hint="비밀번호"
-        android:inputType="textPassword"
-        android:layout_gravity="center_horizontal"/>
+        android:inputType="textPassword" />
 
-    <Button
+    <android.widget.Button
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,16 +47,21 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="45dp"
         android:layout_marginRight="40dp"
-        android:elevation="50dp"
-        android:fontFamily="@font/font_style"
+        android:background="@drawable/login_btn"
+        android:fontFamily="@font/font_the150"
         android:text="로그인"
-        android:textColor="#FF2D2F6E" />
+        android:textColor="#FF2D2F6E"
+        android:textSize="15dp" />
 
-    <Button
+    <android.widget.Button
         android:id="@+id/btn_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/font_style"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/font_the130"
         android:text="회원가입"
-        android:layout_gravity="center_horizontal"/>
+        android:textSize="15dp"
+        android:textColor="#FFFFFFFF"
+        android:background="@null" />
 </androidx.appcompat.widget.LinearLayoutCompat>

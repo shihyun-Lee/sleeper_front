@@ -20,6 +20,6 @@ class LoginActivity : AppCompatActivity() {
         val binding: ActivityLoginBinding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.activityLoginLayout.setBackgroundResource(R.drawable.main_background)
+        binding.activityLoginLayout.setBackgroundResource(R.drawable.login_background)
     }
 }
