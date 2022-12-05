@@ -4,20 +4,22 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
-import com.example.sleeper_frontend.databinding.ActivityMainBinding
+import com.example.sleeper_frontend.databinding.ActivityRegisterBinding
 
-class MainActivity : AppCompatActivity() {
+class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         super.onCreate(savedInstanceState)
 
         val window = window
-        window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
 
-        val binding: ActivityMainBinding = ActivityMainBinding.inflate(layoutInflater)
+        val binding: ActivityRegisterBinding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.activityMainLayout.setBackgroundResource(R.drawable.main_background)
+        binding.activityRegisterLayout.setBackgroundResource(R.drawable.login_background)
+
     }
 }
