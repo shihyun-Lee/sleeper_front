@@ -11,15 +11,19 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="274dp"
+        android:layout_marginTop="300dp"
         android:layout_gravity="center_horizontal"
-        android:padding="10dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="13dp"
+        android:paddingEnd="13dp"
         android:ems="10"
         android:fontFamily="@font/font_the130"
-        android:textSize="15dp"
+        android:textSize="15sp"
+        android:textColor="#FFFFFFFF"
         android:textColorHint="#80FFFFFF"
         android:backgroundTint="#FFFFFFFF"
-        android:hint="아이디"
+        android:hint="@string/id"
+        android:autofillHints="username"
         android:inputType="textPersonName" />
 
     <EditText
@@ -28,15 +32,19 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:layout_gravity="center_horizontal"
-        android:padding="10dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="13dp"
+        android:paddingEnd="13dp"
         android:ems="10"
         android:fontFamily="@font/font_the130"
-        android:textSize="15dp"
+        android:textSize="15sp"
+        android:textColor="#FFFFFFFF"
         android:textColorHint="#80FFFFFF"
         android:backgroundTint="#FFFFFFFF"
-        android:hint="비밀번호"
+        android:hint="@string/password"
+        android:autofillHints="password"
         android:inputType="textPassword" />
 
     <android.widget.Button
@@ -48,20 +56,20 @@
         android:layout_marginTop="45dp"
         android:layout_marginRight="40dp"
         android:background="@drawable/login_btn"
-        android:fontFamily="@font/font_the150"
-        android:text="로그인"
+        android:fontFamily="@font/font_the160"
+        android:text="@string/login"
         android:textColor="#FF2D2F6E"
-        android:textSize="15dp" />
+        android:textSize="15sp" />
 
     <android.widget.Button
         android:id="@+id/btn_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/font_the130"
-        android:text="회원가입"
-        android:textSize="15dp"
+        android:text="@string/action_sign_in_short"
+        android:textSize="15sp"
         android:textColor="#FFFFFFFF"
         android:background="@null" />
 </androidx.appcompat.widget.LinearLayoutCompat>
