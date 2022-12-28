@@ -4,12 +4,35 @@
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short"><u>회원가입</u></string>
     <string name="welcome">"Welcome !"</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
-    <string name="id">아이디</string>
-    <string name="password">비밀번호</string>
-    <string name="login">로그인</string>
+
+    <string name="login_scr_edittext_id">아이디</string>
+    <string name="login_scr_edittext_password">비밀번호</string>
+    <string name="login_scr_btn_login">로그인</string>
+    <string name="login_scr_btn_register"><u>회원가입</u></string>
+
+    <string name="logo">Sleeper</string>
+
+    <string name="register_scr_textview_id">아이디</string>
+    <string name="register_scr_edittext_id_hint">영문 8~20자</string>
+    <string name="register_scr_btn_verification">중복확인</string>
+    <string name="register_scr_textview_password">비밀번호</string>
+    <string name="register_scr_edittext_password_hint">영문, 숫자, 특수문자 모두 포함 8~20자</string>
+    <string name="register_scr_textview_password_verification">비밀번호 확인</string>
+    <string name="register_scr_edittext_password_verification_hint">영문, 숫자, 특수문자 모두 포함 8~20자</string>
+    <string name="register_scr_textview_username">닉네임</string>
+    <string name="register_scr_edittext_username_hint">영문, 숫자, 특수문자 모두 포함 8~20자</string>
+    <string name="register_scr_textview_age">나이</string>
+    <string name="register_scr_edittext_age_hint">나이 선택</string>
+    <string name="register_scr_finish">완료</string>
+
+    <string name="survey_scr_textview_goal_start">목표 수면 시작 시간</string>
+    <string name="survey_scr_textview_goal_end">목표 기상 시간</string>
+    <string name="survey_scr_btn_choose">시간 선택</string>
+    <string name="survey_scr_textview">%1$d:%2$s</string>
+    <string name="survey_scr_finish">완료</string>
+
 </resources>

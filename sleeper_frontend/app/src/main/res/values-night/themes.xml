@@ -16,5 +16,21 @@
         <item name="windowNoTitle">true</item>
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:timePickerMode">spinner</item>
     </style>
+
+    <style name="MainLogo">
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColor">@color/logo</item>
+        <item name="android:fontFamily">@font/font_the170</item>
+        <item name="android:text">@string/logo</item>
+    </style>
+    <style name="BtnOkayEnabled">
+        <item name="android:background">@drawable/btn_okay</item>
+        <item name="android:text">완료</item>
+        <item name="android:fontFamily">@font/font_the160</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
 </resources>

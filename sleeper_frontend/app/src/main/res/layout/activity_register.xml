@@ -2,76 +2,231 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/activityRegisterLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="120dp">
 
-    <EditText
-        android:id="@+id/edit_id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="300dp"
-        android:layout_gravity="center_horizontal"
-        android:paddingBottom="20dp"
-        android:paddingStart="13dp"
-        android:paddingEnd="13dp"
-        android:ems="10"
-        android:fontFamily="@font/font_the130"
-        android:textSize="15sp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white_hint"
-        android:backgroundTint="@color/white"
-        android:hint="@string/id"
-        android:autofillHints="username"
-        android:inputType="textPersonName"
-        android:imeOptions="actionNext" />
-
-    <EditText
-        android:id="@+id/edit_pw"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="8dp"
-        android:layout_gravity="center_horizontal"
-        android:paddingBottom="20dp"
-        android:paddingStart="13dp"
-        android:paddingEnd="13dp"
-        android:ems="10"
-        android:fontFamily="@font/font_the130"
-        android:textSize="15sp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white_hint"
-        android:backgroundTint="@color/white"
-        android:hint="@string/password"
-        android:autofillHints="password"
-        android:inputType="textPassword"
-        android:imeOptions="actionDone" />
-
-    <android.widget.Button
-        android:id="@+id/btn_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginRight="40dp"
-        android:background="@drawable/login_btn"
-        android:fontFamily="@font/font_the160"
-        android:text="@string/login"
-        android:textColor="#FF2D2F6E"
-        android:textSize="15sp" />
-
-    <android.widget.Button
-        android:id="@+id/btn_register"
+    <TextView
+        android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/font_the130"
-        android:text="@string/action_sign_in_short"
-        android:textSize="15sp"
-        android:textColor="@color/white"
-        android:background="@null" />
+        android:fontFamily="@font/font_the170"
+        android:text="@string/logo"
+        android:textColor="@color/logo"
+        android:textSize="23sp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:text="@string/register_scr_textview_id"
+                android:fontFamily="@font/font_the140"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <android.widget.RelativeLayout
+                android:id="@+id/edit_id_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <EditText
+                    android:id="@+id/edit_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="13dp"
+                    android:ems="8"
+                    android:fontFamily="@font/font_the110"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_hint"
+                    android:backgroundTint="@color/white"
+                    android:hint="@string/register_scr_edittext_id_hint"
+                    android:autofillHints="username"
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"/>
+
+                <android.widget.Button
+                    android:id="@+id/btn_verification"
+                    android:layout_width="48dp"
+                    android:layout_height="18dp"
+                    android:layout_marginEnd="3dp"
+                    android:elevation="10dp"
+                    android:layout_alignEnd="@id/edit_id"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/register_scr_btn_verification"
+                    android:text="@string/register_scr_btn_verification"
+                    android:textSize="7sp"
+                    android:textColor="@color/white"/>
+            </android.widget.RelativeLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:text="@string/register_scr_textview_password"
+                android:fontFamily="@font/font_the140"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="20dp"
+                android:paddingStart="13dp"
+                android:paddingEnd="13dp"
+                android:ems="8"
+                android:fontFamily="@font/font_the110"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_hint"
+                android:backgroundTint="@color/white"
+                android:hint="@string/register_scr_edittext_password_hint"
+                android:autofillHints="password"
+                android:inputType="textPassword"
+                android:imeOptions="actionNext" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:text="@string/register_scr_textview_password_verification"
+                android:fontFamily="@font/font_the140"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_password_identify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="20dp"
+                android:paddingStart="13dp"
+                android:paddingEnd="13dp"
+                android:ems="8"
+                android:fontFamily="@font/font_the110"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_hint"
+                android:backgroundTint="@color/white"
+                android:hint="@string/register_scr_edittext_password_verification_hint"
+                android:autofillHints="password"
+                android:inputType="textPassword"
+                android:imeOptions="actionNext" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:text="@string/register_scr_textview_username"
+                android:fontFamily="@font/font_the140"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="20dp"
+                android:paddingStart="13dp"
+                android:paddingEnd="13dp"
+                android:ems="8"
+                android:fontFamily="@font/font_the110"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_hint"
+                android:backgroundTint="@color/white"
+                android:hint="@string/register_scr_edittext_username_hint"
+                android:inputType="textPersonName"
+                android:imeOptions="actionNext"
+                android:autofillHints="AUTOFILL_HINT_PERSON_NAME" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:text="@string/register_scr_textview_age"
+                android:fontFamily="@font/font_the140"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="20dp"
+                android:paddingStart="13dp"
+                android:paddingEnd="13dp"
+                android:ems="8"
+                android:fontFamily="@font/font_the110"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_hint"
+                android:backgroundTint="@color/white"
+                android:hint="@string/register_scr_edittext_age_hint"
+                android:inputType="textPersonName"
+                android:imeOptions="actionNext"
+                android:enabled="false"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <android.widget.Button
+            android:id="@+id/btn_okay"
+            android:layout_width="108dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="right"
+            style="@style/BtnOkayEnabled"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
 </androidx.appcompat.widget.LinearLayoutCompat>
