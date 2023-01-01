@@ -38,7 +38,7 @@ class SurveyActivity : AppCompatActivity() {
         }
 
         binding.btnSurveyFinished.setOnClickListener {
-            val intent = Intent(this@SurveyActivity, HomeActivity::class.java)
+            val intent = Intent(this@SurveyActivity, MainActivity::class.java)
             startActivity(intent)
         }
 
@@ -57,24 +57,29 @@ class SurveyActivity : AppCompatActivity() {
 
     private fun setTimeText(btn : View, hourOfDay : Int, minute : Int) {
         var min : String = minute.toString()
-        lateinit var meridiem : String
 
         if ( min.length < 2 ) {
             min = "0${min}"
         }
 
-        meridiem = if (hourOfDay > 12) {
+        val meridiem : String = if (hourOfDay > 12) {
             "오후"
         } else {
             "오전"
         }
 
+        val hour : Int  = if (hourOfDay > 13) {
+            hourOfDay - 12
+        } else {
+            hourOfDay
+        }
+
         if (btn == binding.btnSurveyChooseStartTime) {
             binding.textviewSurveyStartTimeMeridiem.text =meridiem
-            binding.textviewSurveyStarTime.text = getString(R.string.survey_scr_textview, hourOfDay, min)
+            binding.textviewSurveyStarTime.text = getString(R.string.survey_scr_textview, hour, min)
         } else if (btn == binding.btnSurveyChooseEndTime) {
             binding.textviewSurveyEndTimeMeridiem.text = meridiem
-            binding.textviewSurveyEndTime.text = getString(R.string.survey_scr_textview, hourOfDay, min)
+            binding.textviewSurveyEndTime.text = getString(R.string.survey_scr_textview, hour, min)
         }
 
         if (binding.textviewSurveyStarTime.text != "" && binding.textviewSurveyEndTime.text != "") enableBtn()
