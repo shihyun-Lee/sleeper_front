@@ -25,6 +25,7 @@
         <item name="android:fontFamily">@font/font_the170</item>
         <item name="android:text">@string/logo</item>
     </style>
+
     <style name="BtnOkayEnabled">
         <item name="android:background">@drawable/btn_okay</item>
         <item name="android:text">완료</item>

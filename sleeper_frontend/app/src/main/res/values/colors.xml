@@ -10,4 +10,5 @@
     <color name="white_hint">#80FFFFFF</color>
     <color name="logo">#F4F1C3</color>
     <color name="purple">#FF2D2F6E</color>
+    <color name="transparent">#00000000</color>
 </resources>

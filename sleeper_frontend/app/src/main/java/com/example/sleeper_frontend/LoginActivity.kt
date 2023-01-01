@@ -23,7 +23,7 @@ class LoginActivity : AppCompatActivity() {
         binding.activityLoginLayout.setBackgroundResource(R.drawable.login_background)
 
         binding.btnLogin.setOnClickListener {
-            val intent = Intent(this@LoginActivity, HomeActivity::class.java)
+            val intent = Intent(this@LoginActivity, MainActivity::class.java)
             startActivity(intent)
         }
 

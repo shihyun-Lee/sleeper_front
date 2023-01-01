@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:layout_height="25dp"
+        android:layout_width="25dp"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="홈" />
+
+    <item
+        android:id="@+id/alarm"
+        android:layout_height="25dp"
+        android:layout_width="25dp"
+        android:enabled="true"
+        android:icon="@drawable/ic_clock"
+        android:title="알람" />
+
+    <item
+        android:id="@+id/calendar"
+        android:layout_height="25dp"
+        android:layout_width="25dp"
+        android:enabled="true"
+        android:icon="@drawable/ic_calendar"
+        android:title="달력" />
+
+    <item
+        android:id="@+id/profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_profile"
+        android:title="마이페이지" />
+
+
+</menu>
