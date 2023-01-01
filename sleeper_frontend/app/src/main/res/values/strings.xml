@@ -37,4 +37,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="popup_scr_shop">상점</string>
+    <string name="popup_scr_friend">친구</string>
+
 </resources>
