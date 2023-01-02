@@ -5,11 +5,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
+import androidx.fragment.app.Fragment
 import com.example.sleeper_frontend.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private val fragmentHome by lazy { HomeFragment() }
+    private val fragmentAlarm by lazy { AlarmFragment() }
+    private val fragmentCalendar by lazy { CalendarFragment() }
+    private val fragmentMyPage by lazy { MypageFragment() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         requestWindowFeature(Window.FEATURE_NO_TITLE)
@@ -27,6 +32,9 @@ class MainActivity : AppCompatActivity() {
         binding.btnShowMore.setOnClickListener {
             clickBtnPopup()
         }
+
+        initNavigationBar()
+
     }
 
     private fun clickBtnPopup() {
@@ -37,4 +45,35 @@ class MainActivity : AppCompatActivity() {
 
         popup.show()
     }
+
+    private fun initNavigationBar() {
+        binding.bnvMain.run {
+            setOnItemSelectedListener {
+                when(it.itemId) {
+                    R.id.home -> {
+                        changeFragment(fragmentHome)
+                    }
+                    R.id.alarm -> {
+                        changeFragment(fragmentAlarm)
+                    }
+                    R.id.calendar -> {
+                        changeFragment(fragmentCalendar)
+                    }
+                    R.id.profile -> {
+                        changeFragment(fragmentMyPage)
+                    }
+                }
+                true
+            }
+            binding.bnvMain.selectedItemId = R.id.home
+        }
+    }
+
+    private fun changeFragment(fragment: Fragment) {
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.fl_container, fragment)
+            .commit()
+    }
+
 }
