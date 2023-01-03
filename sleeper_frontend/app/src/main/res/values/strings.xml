@@ -40,4 +40,6 @@
     <string name="popup_scr_shop">상점</string>
     <string name="popup_scr_friend">친구</string>
 
+    <string name="home_frg_start_sleep">수면 시작</string>
+
 </resources>

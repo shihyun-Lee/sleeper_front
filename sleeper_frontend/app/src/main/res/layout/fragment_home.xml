@@ -6,39 +6,72 @@
     tools:context=".HomeFragment">
 
     <LinearLayout
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="45dp">
+        android:orientation="vertical"
+        android:gravity="center_horizontal" >
 
-        <android.widget.Button
-            android:id="@+id/btn_show_more"
-            android:layout_width="24dp"
-            android:layout_height="25dp"
-            android:background="@drawable/ic_show_more"
-            android:layout_marginLeft="35dp"/>
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
             android:layout_height="wrap_content"
-            style = "@style/MainLogo" />
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="45dp">
 
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
+            <android.widget.Button
+                android:id="@+id/btn_show_more"
+                android:layout_width="24dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_show_more"
+                android:layout_marginLeft="35dp"/>
 
-        <android.widget.Button
-            android:layout_width="24dp"
-            android:layout_height="25dp"
-            android:background="@drawable/ic_issue"
-            android:layout_marginRight="35dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style = "@style/MainLogo" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <android.widget.Button
+                android:layout_width="24dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_issue"
+                android:layout_marginRight="35dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="245dp">
+
+            <ImageView
+                android:layout_width="167dp"
+                android:layout_height="87dp"
+                android:src="@drawable/character"/>
+            
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:background="@drawable/home_frg_btn_start_sleep"
+                android:text="@string/home_frg_start_sleep"
+                android:elevation="15dp"
+                android:fontFamily="@font/font_the160"
+                android:textSize="12sp"
+                android:textColor="@color/logo"
+                android:layout_marginTop="45dp"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 

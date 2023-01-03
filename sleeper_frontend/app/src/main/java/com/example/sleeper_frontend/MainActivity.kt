@@ -1,6 +1,5 @@
 package com.example.sleeper_frontend
 
-import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
@@ -29,21 +28,8 @@ class MainActivity : AppCompatActivity() {
 
         binding.activityMainLayout.setBackgroundResource(R.drawable.main_background)
 
-        binding.btnShowMore.setOnClickListener {
-            clickBtnPopup()
-        }
-
         initNavigationBar()
 
-    }
-
-    private fun clickBtnPopup() {
-        val popup = Dialog(this)
-        popup.requestWindowFeature(Window.FEATURE_NO_TITLE)
-        popup.window?.setBackgroundDrawableResource(android.R.color.transparent)
-        popup.setContentView(R.layout.popup_dialog)
-
-        popup.show()
     }
 
     private fun initNavigationBar() {
