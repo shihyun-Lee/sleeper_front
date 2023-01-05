@@ -33,4 +33,12 @@
         <item name="android:textSize">13sp</item>
         <item name="android:letterSpacing">0.05</item>
     </style>
+
+    <style name="PopupDialog" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/PopupDialogChild</item>
+    </style>
+
+    <style name="PopupDialogChild" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@color/transparent</item>
+    </style>
 </resources>

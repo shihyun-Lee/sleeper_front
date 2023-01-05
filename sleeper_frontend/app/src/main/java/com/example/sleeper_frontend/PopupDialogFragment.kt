@@ -1,5 +1,6 @@
 package com.example.sleeper_frontend
 
+import android.app.Dialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -14,6 +15,11 @@ open class PopupDialogFragment : DialogFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        setStyle(
+            STYLE_NORMAL,
+            R.style.PopupDialog
+        )
     }
 
     override fun onCreateView(
@@ -26,6 +32,7 @@ open class PopupDialogFragment : DialogFragment() {
 
         return binding.root
     }
+
 
     fun getInstance() : PopupDialogFragment {
         return PopupDialogFragment()
