@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_marginTop="245dp">
+            android:layout_marginTop="300dp">
 
             <ImageView
                 android:layout_width="167dp"

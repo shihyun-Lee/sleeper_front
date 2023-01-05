@@ -28,11 +28,15 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     }
 
     private fun clickBtnPopup() {
-        val popup = Dialog(context)
-        popup.requestWindowFeature(Window.FEATURE_NO_TITLE)
-        popup.window?.setBackgroundDrawableResource(android.R.color.transparent)
-        popup.setContentView(R.layout.popup_dialog)
-
-        popup.show()
+        val popup : PopupDialogFragment = PopupDialogFragment().getInstance()
+//        popup.requestWindowFeature(Window.FEATURE_NO_TITLE)
+//        popup.window?.setBackgroundDrawableResource(android.R.color.transparent)
+//        popup.setContentView(R.layout.popup_dialog_fragment)
+       activity?.supportFragmentManager?.let { fragmentManager ->
+           popup.show(
+               fragmentManager,
+               "tag"
+           )
+       }
     }
 }
