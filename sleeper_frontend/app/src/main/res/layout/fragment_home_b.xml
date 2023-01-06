@@ -61,6 +61,7 @@
                 android:src="@drawable/character"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_stop_sleep"
                 android:layout_width="110dp"
                 android:layout_height="35dp"
                 android:background="@drawable/home_frg_btn_start_sleep"

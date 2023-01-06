@@ -14,6 +14,7 @@
             android:id="@+id/action_homeFragment_to_diaryFragment"
             app:destination="@id/diaryFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/diaryFragment"
         android:name="com.example.sleeper_frontend.DiaryFragment"
@@ -26,6 +27,7 @@
             android:id="@+id/action_diaryFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/homeBFragment"
         android:name="com.example.sleeper_frontend.HomeBFragment"
@@ -35,4 +37,5 @@
             android:id="@+id/action_homeBFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
+
 </navigation>
