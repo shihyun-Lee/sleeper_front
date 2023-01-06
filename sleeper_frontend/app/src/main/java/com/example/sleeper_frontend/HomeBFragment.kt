@@ -1,34 +1,32 @@
 package com.example.sleeper_frontend
 
+import android.app.Dialog
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.sleeper_frontend.databinding.FragmentDiaryBinding
+import android.view.Window
+import com.example.sleeper_frontend.databinding.FragmentHomeBBinding
 import com.example.sleeper_frontend.databinding.FragmentHomeBinding
 
-class DiaryFragment : Fragment(R.layout.fragment_diary) {
-    private lateinit var binding: FragmentDiaryBinding
+class HomeBFragment : Fragment(R.layout.fragment_home_b) {
+
+    private lateinit var binding: FragmentHomeBBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        binding = FragmentDiaryBinding.inflate(inflater, container, false)
+        binding = FragmentHomeBBinding.inflate(inflater, container, false)
 
         binding.btnShowMore.setOnClickListener {
             clickBtnPopup()
         }
 
-        binding.btnSaveDiary.setOnClickListener {
-            saveDiary()
-        }
-
         return binding.root
     }
-
 
     private fun clickBtnPopup() {
         val popup : PopupDialogFragment = PopupDialogFragment().getInstance()
@@ -39,10 +37,4 @@ class DiaryFragment : Fragment(R.layout.fragment_diary) {
             )
         }
     }
-
-    private fun saveDiary() {
-        //네트워크 통신 구현
-        //해당 날짜이면 diary 수정 가능하도록.
-    }
-
 }

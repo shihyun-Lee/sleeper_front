@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DiaryFragment">
+    tools:context=".HomeBFragment">
 
     <LinearLayout
         android:layout_height="match_parent"
@@ -33,10 +33,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/diary_frag_diary"
-                android:fontFamily="@font/font_the150"
-                android:textSize="16sp"
-                android:textColor="@color/logo"/>
+                style = "@style/MainLogo" />
 
             <View
                 android:layout_width="0dp"
@@ -51,43 +48,30 @@
 
         </LinearLayout>
 
-        <android.widget.RelativeLayout
-            android:id="@+id/wrap_diary_layout"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:gravity="center"
-            android:layout_marginTop="100dp">
+            android:layout_marginTop="300dp">
 
-            <EditText
-                android:id="@+id/diary"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/diary_background"
-                android:hint="@string/diary_frag_hint"
-                android:fontFamily="@font/font_the140"
-                android:textSize="12sp"
-                android:textColor="@color/purple"
-                android:textColorHint="@color/lilac"
-                android:inputType="textPersonName"
-                android:imeOptions="actionNext"
-                android:maxLength="200"
-                android:paddingLeft="20dp"
-                android:paddingBottom="380dp"/>
+            <ImageView
+                android:layout_width="167dp"
+                android:layout_height="87dp"
+                android:src="@drawable/character"/>
 
-            <android.widget.Button
-                android:id="@+id/btn_save_diary"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@id/diary"
-                android:layout_alignBottom="@+id/diary"
-                android:layout_marginBottom="15dp"
-                android:text="@string/diary_frag_save"
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:background="@drawable/home_frg_btn_start_sleep"
+                android:text="@string/home_b_frg_stop_sleep"
+                android:elevation="15dp"
                 android:fontFamily="@font/font_the160"
-                android:textSize="15sp"
-                android:textColor="@drawable/btn_save_diary"
-                android:background="@null"/>
+                android:textSize="12sp"
+                android:textColor="@color/logo"
+                android:layout_marginTop="45dp"/>
 
-        </android.widget.RelativeLayout>
+        </LinearLayout>
 
     </LinearLayout>
 

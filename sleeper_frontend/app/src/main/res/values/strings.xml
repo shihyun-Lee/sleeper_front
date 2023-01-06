@@ -46,4 +46,6 @@
     <string name="diary_frag_hint">오늘은 어떤 좋은 일이 있었나요? :)</string>
     <string name="diary_frag_save">등록</string>
 
+    <string name="home_b_frg_stop_sleep">수면 종료</string>
+
 </resources>
