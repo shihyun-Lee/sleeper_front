@@ -41,4 +41,5 @@
     <style name="PopupDialogChild" parent="Widget.Design.BottomSheet.Modal">
         <item name="android:background">@color/transparent</item>
     </style>
+
 </resources>
