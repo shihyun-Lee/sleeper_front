@@ -75,6 +75,7 @@
                 android:paddingBottom="380dp"/>
 
             <android.widget.Button
+                android:id="@+id/btn_save_diary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@id/diary"
