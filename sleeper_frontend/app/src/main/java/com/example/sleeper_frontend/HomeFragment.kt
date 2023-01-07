@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.Window
+import androidx.navigation.findNavController
 import com.example.sleeper_frontend.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
@@ -22,6 +23,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         binding.btnShowMore.setOnClickListener {
             clickBtnPopup()
+        }
+
+        binding.btnStartSleep.setOnClickListener {
+            it.findNavController().navigate(R.id.action_homeFragment_to_diaryFragment)
         }
 
         return binding.root

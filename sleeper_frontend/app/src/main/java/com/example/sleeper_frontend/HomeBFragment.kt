@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.Window
+import androidx.navigation.findNavController
 import com.example.sleeper_frontend.databinding.FragmentHomeBBinding
 import com.example.sleeper_frontend.databinding.FragmentHomeBinding
 
@@ -23,6 +24,10 @@ class HomeBFragment : Fragment(R.layout.fragment_home_b) {
 
         binding.btnShowMore.setOnClickListener {
             clickBtnPopup()
+        }
+
+        binding.btnStopSleep.setOnClickListener {
+            it.findNavController().navigate(R.id.action_homeBFragment_to_homeFragment)
         }
 
         return binding.root

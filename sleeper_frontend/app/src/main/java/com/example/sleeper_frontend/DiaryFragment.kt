@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import com.example.sleeper_frontend.databinding.FragmentDiaryBinding
 import com.example.sleeper_frontend.databinding.FragmentHomeBinding
 
@@ -24,7 +25,9 @@ class DiaryFragment : Fragment(R.layout.fragment_diary) {
 
         binding.btnSaveDiary.setOnClickListener {
             saveDiary()
+            it.findNavController().navigate(R.id.action_diaryFragment_to_homeBFragment)
         }
+
 
         return binding.root
     }
