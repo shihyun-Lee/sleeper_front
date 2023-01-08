@@ -25,10 +25,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             clickBtnPopup()
         }
 
-        binding.btnStartSleep.setOnClickListener {
-            it.findNavController().navigate(R.id.action_homeFragment_to_diaryFragment)
-        }
-
         return binding.root
     }
 

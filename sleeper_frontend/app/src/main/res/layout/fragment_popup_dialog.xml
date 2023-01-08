@@ -28,7 +28,7 @@
 
                 <android.widget.Button
                     android:layout_height="72dp"
-                    android:layout_width="72dp"
+                    android:layout_width="71dp"
                     android:background="@drawable/ic_shop" />
 
                 <TextView

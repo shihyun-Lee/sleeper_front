@@ -23,12 +23,6 @@ class DiaryFragment : Fragment(R.layout.fragment_diary) {
             clickBtnPopup()
         }
 
-        binding.btnSaveDiary.setOnClickListener {
-            saveDiary()
-            it.findNavController().navigate(R.id.action_diaryFragment_to_homeBFragment)
-        }
-
-
         return binding.root
     }
 

@@ -26,10 +26,6 @@ class HomeBFragment : Fragment(R.layout.fragment_home_b) {
             clickBtnPopup()
         }
 
-        binding.btnStopSleep.setOnClickListener {
-            it.findNavController().navigate(R.id.action_homeBFragment_to_homeFragment)
-        }
-
         return binding.root
     }
 
